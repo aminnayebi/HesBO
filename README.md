@@ -1,5 +1,12 @@
 # A Framework for Bayesian Optimization in Embedded Subspaces
-This repository includes several implementations of high dimensional BO, mainly the projection methods. There are two main category of projection based BO methods, REMBO and HeSBO. There are also the implementations of HeSBO embedding method on both BLOSSOM and Cornell-MOE which are the state-of-the-art low dimensional BO methods. To use those algorithms, please go to the corresponding folder.
+Bayesian optimization (BO) has recently emerged as powerful method for the global optimization of expensive-to-evaluate black-box functions. This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions, including:
+* The HesBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
+** The Knowledge Gradient algorithm of Cornell-MOE (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
+** The BLOSSOM algorithm of McLeoad, Osborne, and Roberts (ICML '18)
+** Expected improvement, e.g., see Jones, Schonlau, and Welch '98)
+* The REMBO method using 
+** the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. '16 and 
+** K<sub><img src="https://latex.codecogs.com/gif.latex?{\psi}" title="{\psi}" /></sub> of Binois, Ginsbourger and Roustant '15.  
 
 ## Installing the requirements
 The codes are written in python 3.6, so it is recommended to use this version of python to run the scripts. To install the requirements one can simply use this line:
@@ -30,11 +37,13 @@ To determine the algorithm, use `REMBO` or `HeSBO` input for the python script. 
 
 ## Citation
 ```bash
-@inproceedings{pwf17,
-  title={Multi-Information Source Optimization},
-  author={Poloczek, Matthias and Wang, Jialei and Frazier, Peter I.},
-  booktitle={Advances in Neural Information Processing Systems},
-  note={Accepted for publication. Code is available at \url{http://github.com/misokg}},
-  year={2017}
+@inproceedings{HesBO19,
+  author    = {Alex Munteanu and
+               Amin Nayebi and
+			   Matthias Poloczek},
+  title     = {A Framework for Bayesian Optimization in Embedded Subspaces},
+  booktitle = {Proceedings of the 36th International Conference on Machine Learning, {(ICML)}},
+  year      = {2019},
+  note={Accepted for publication}
 }
 ```
