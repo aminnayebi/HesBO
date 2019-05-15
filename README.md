@@ -18,7 +18,7 @@ This repository provides Python implementations of several algorithms that exten
 
 	* the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. (JMLR '18) and 
 	
-	* the K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> kernel of Binois, Ginsbourger and Roustant '15.  
+	* the K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> kernel of Binois, Ginsbourger and Roustant (LION '15).  
 
 ## Installing the requirements
 The codes are written in python 3.6, so it is recommended to use this version of python to run the scripts. To install the requirements one can simply use this line:
