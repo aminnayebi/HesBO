@@ -4,4 +4,5 @@ One first needs to install the BLOSSOM package on their machine. To do so, we re
 python blossom_run.py [test_function] [num_of_steps] [low_dim] [high_dim] [num_of_initial_sample] [noise_variance] [job_id]
 ```
 Please note that to change the line 9 in the blossom_run.py file and give the path of the directory in which the results would be collected.
+
 [1]: https://github.com/markm541374/gpbo
