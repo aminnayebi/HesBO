@@ -32,6 +32,12 @@ There are HeSBO and three different variants of REMBO implemented in this code. 
 python experiments.py [algorithm] [first_job_id] [last_job_id] [test_function] [num_of_steps] [low_dim] [high_dim] [num_of_initial_sample] [noise_variance] [REMBO_variant]
 ```
 To determine the algorithm, use `REMBO` or `HeSBO` input for the python script. If REMBO algorithm is selected to be run, the REMBO variant must be determined by `X`, `Y`, or `psi` as the last argument. If none of those variants is picked, all of those variants will be run.
+Here is an example of running HeSBO-EI on 100 dim noise-free Branin with 4 low dimensions:
+```bash
+python experiments.py HeSBO 1 1 Branin 80 4 100 10 0
+```
+To collect the output data, you must have a folder named "results". Here is a plot for running REMBO-K<sub>X</sub> and HeSBO-EI on the Branin function.
+<center><img src="https://github.com/aminnayebi/HesBO/blob/master/Branin_D100_d4.jpg" height="350" width="350"></center>
 
 ## Citation
 ```bash
