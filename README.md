@@ -2,7 +2,7 @@
 
 ## What is high-dimensional Bayesian optimization?
 Bayesian optimization (BO) has recently emerged as powerful method for the global optimization of expensive-to-evaluate black-box functions. However, these methods are usually limited to about 15 input parameters (levers). 
-In the paper "A Framework for Bayesian Optimization in Embedded Subspaces" (to appear at ICML'19), Munteanu, Nayebi, and Poloczek propose a non-adaptive probabilistic subspace embedding that can be combined with many BO algorithms to enable them to higher dimensional problems.
+In the paper "A Framework for Bayesian Optimization in Embedded Subspaces" (to appear at ICML'19), [Munteanu](https://www.statistik.tu-dortmund.de/munteanu.html "Alexander Munteanu"), Nayebi, and [Poloczek](http://www.sie.arizona.edu/poloczek "Matthias Poloczek") propose a non-adaptive probabilistic subspace embedding that can be combined with many BO algorithms to enable them to higher dimensional problems.
 
 This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions:
 
