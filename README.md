@@ -8,7 +8,7 @@ This repository provides Python implementations of several algorithms that exten
 
 * The HeSBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
 
-	* The Knowledge Gradient algorithm of [Cornell-MOE](https://github.com/wujian16/Cornell-MOE "Cornell-MOE") (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
+	* The Knowledge Gradient (KG) algorithm of [Cornell-MOE](https://github.com/wujian16/Cornell-MOE "Cornell-MOE") (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
 	
 	* The [BLOSSOM algorithm](https://github.com/markm541374/gpbo "BLOSSOM") of McLeod, Osborne, and Roberts (ICML '18)
 	
@@ -27,20 +27,6 @@ pip3 install -r requirements.txt
 ```
 ## Running different BO methods
 There are HeSBO and three different variants of REMBO implemented in this code. Three REMBO variants are called K<sub>y</sub>, K<sub>X</sub>, and K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> . These algorithms can be run as follows.
-
-### An example running HesBO-EI on a benchmark
-Run
-```bash
-(VIRT_ENV) $ python run_misoKG.py miso_rb_benchmark_mkg 0 0
-```
-for the Rosenbrock function with noisefree observations, or 
-```bash
-(VIRT_ENV) $ python run_misoKG.py miso_rb_benchmark_mkg 1 0
-```
-for the variant with observational noise.
-
-The results are stored in a pickled dictionary in the current working directory. The filename is output when the program starts.
-Note that the last parameter is a nonnegative integer that is used for the filename, e.g., when running multiple replications.
 
 ```bash
 python experiments.py [algorithm] [first_job_id] [last_job_id] [test_function] [num_of_steps] [low_dim] [high_dim] [num_of_initial_sample] [noise_variance] [REMBO_variant]
