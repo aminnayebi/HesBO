@@ -1,7 +1,7 @@
 import math
 import numpy as np
-import torch
-from BOCK_benchmarks.mnist_weight import mnist_weight
+# import torch
+# from BOCK_benchmarks.mnist_weight import mnist_weight
 # All functions are minimization problems
 
 def back_projection(low_obs, high_to_low, sign, bx_size):
