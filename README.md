@@ -2,8 +2,11 @@
 Bayesian optimization (BO) has recently emerged as powerful method for the global optimization of expensive-to-evaluate black-box functions. This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions, including:
 
 * The HesBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
+
 	** The Knowledge Gradient algorithm of Cornell-MOE (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
+	
 	** The BLOSSOM algorithm of McLeoad, Osborne, and Roberts (ICML '18)
+	
 	** Expected improvement, e.g., see Jones, Schonlau, and Welch '98)
 		
 * The REMBO method using 
