@@ -6,7 +6,7 @@ In the paper "A Framework for Bayesian Optimization in Embedded Subspaces" (to a
 
 This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions:
 
-* The HesBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
+* The HeSBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
 
 	* The Knowledge Gradient algorithm of [Cornell-MOE](https://github.com/wujian16/Cornell-MOE "Cornell-MOE") (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
 	
@@ -26,18 +26,18 @@ The codes are written in python 3.6, so it is recommended to use this version of
 pip3 install -r requirements.txt
 ```
 ## Running different BO methods
-There are HeSBO and three different variants of REMBO implemented in this code. Three REMBO variants are called K<sub>Y</sub>, K<sub>X</sub>, and K<sub><img src="https://latex.codecogs.com/gif.latex?{\psi}" title="{\psi}" /></sub>. To run any of these algorithms, one should run this line:
+There are HeSBO and three different variants of REMBO implemented in this code. Three REMBO variants are called K<sub>y</sub>, K<sub>X</sub>, and K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> . These algorithms can be run as follows.
 
 ### An example running HesBO-EI on a benchmark
 Run
 ```bash
 (VIRT_ENV) $ python run_misoKG.py miso_rb_benchmark_mkg 0 0
 ```
-for the Rosenbrock function proposed by Lam, Allaire, and Willcox (2015), or 
+for the Rosenbrock function with noisefree observations, or 
 ```bash
 (VIRT_ENV) $ python run_misoKG.py miso_rb_benchmark_mkg 1 0
 ```
-for the noisy variant proposed in the MISO paper.
+for the variant with observational noise.
 
 The results are stored in a pickled dictionary in the current working directory. The filename is output when the program starts.
 Note that the last parameter is a nonnegative integer that is used for the filename, e.g., when running multiple replications.
@@ -49,7 +49,7 @@ To determine the algorithm, use `REMBO` or `HeSBO` input for the python script. 
 
 ## Citation
 ```bash
-@inproceedings{HesBO19,
+@inproceedings{HeSBO19,
   author    = {Alex Munteanu and
                Amin Nayebi and
 			   Matthias Poloczek},
