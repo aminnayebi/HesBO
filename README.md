@@ -1,19 +1,24 @@
 # A Framework for Bayesian Optimization in Embedded Subspaces
-Bayesian optimization (BO) has recently emerged as powerful method for the global optimization of expensive-to-evaluate black-box functions. This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions:
+
+## What is high-dimensional Bayesian optimization?
+Bayesian optimization (BO) has recently emerged as powerful method for the global optimization of expensive-to-evaluate black-box functions. However, these methods are usually limited to about 15 input parameters (levers). 
+In the paper "A Framework for Bayesian Optimization in Embedded Subspaces" (to appear at ICML'19), Munteanu, Nayebi, and Poloczek propose a non-adaptive probabilistic subspace embedding that can be combined with many BO algorithms to enable them to higher dimensional problems.
+
+This repository provides Python implementations of several algorithms that extend BO to problems with high input dimensions:
 
 * The HesBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
 
 	* The Knowledge Gradient algorithm of [Cornell-MOE](https://github.com/wujian16/Cornell-MOE "Cornell-MOE") (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
 	
-	* The BLOSSOM algorithm of McLeoad, Osborne, and Roberts (ICML '18)
+	* The [BLOSSOM algorithm](https://github.com/markm541374/gpbo "BLOSSOM") of McLeod, Osborne, and Roberts (ICML '18)
 	
-	* Expected improvement, e.g., see Jones, Schonlau, and Welch '98)
+	* Expected improvement, e.g., see Jones, Schonlau, and Welch (JGO '98)
 		
 * The REMBO method using 
 
-	* the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. '16 and 
+	* the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. (JMLR '18) and 
 	
-	* K<sub>{~_\psi}</sub> of Binois, Ginsbourger and Roustant '15.  
+	* the K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> kernel of Binois, Ginsbourger and Roustant '15.  
 
 ## Installing the requirements
 The codes are written in python 3.6, so it is recommended to use this version of python to run the scripts. To install the requirements one can simply use this line:
