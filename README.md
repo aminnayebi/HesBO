@@ -3,17 +3,17 @@ Bayesian optimization (BO) has recently emerged as powerful method for the globa
 
 * The HesBO algorithm proposed by Munteanu, Nayebi, and Poloczek (ICML '19) (see below for the citation) combined with
 
-	** The Knowledge Gradient algorithm of Cornell-MOE (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
+	* The Knowledge Gradient algorithm of Cornell-MOE (Wu & Frazier NIPS'16; Wu, Poloczek, Wilson, and Frazier NIPS'17)
 	
-	** The BLOSSOM algorithm of McLeoad, Osborne, and Roberts (ICML '18)
+	* The BLOSSOM algorithm of McLeoad, Osborne, and Roberts (ICML '18)
 	
-	** Expected improvement, e.g., see Jones, Schonlau, and Welch '98)
+	* Expected improvement, e.g., see Jones, Schonlau, and Welch '98)
 		
 * The REMBO method using 
 
-	** the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. '16 and 
+	* the K<sub>X</sub>and K<sub>y</sub> kernels of Wang et al. '16 and 
 	
-	** K<sub>{~_\psi}</sub> of Binois, Ginsbourger and Roustant '15.  
+	* K<sub>{~_\psi}</sub> of Binois, Ginsbourger and Roustant '15.  
 
 ## Installing the requirements
 The codes are written in python 3.6, so it is recommended to use this version of python to run the scripts. To install the requirements one can simply use this line:
