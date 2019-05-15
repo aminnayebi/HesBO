@@ -36,7 +36,7 @@ Here is an example of running HeSBO-EI on 100 dim noise-free Branin with 4 low d
 ```bash
 python experiments.py HeSBO 1 1 Branin 80 4 100 10 0
 ```
-To collect the output data, you must have a folder named "results". Here is a plot for running REMBO-K<sub>X</sub> and HeSBO-EI on the Branin function.
+To collect the output data, you must have a folder named "results". Here is a plot for running REMBO-K<sub><img src="https://latex.codecogs.com/gif.latex?{~_\psi}" title="{\psi}" /></sub> and HeSBO-EI on the Branin function.
 <center><img src="https://github.com/aminnayebi/HesBO/blob/master/Branin_D100_d4.jpg" height="350" width="350"></center>
 
 ## Citation
