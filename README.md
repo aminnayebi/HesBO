@@ -48,6 +48,6 @@ To collect the output data, you must have a folder named "results". Here is a pl
   title     = {A Framework for Bayesian Optimization in Embedded Subspaces},
   booktitle = {Proceedings of the 36th International Conference on Machine Learning, {(ICML)}},
   year      = {2019},
-  note={Accepted for publication}
+  note={Accepted for publication. The code is available at https://github.com/aminnayebi/HesBO.}
 }
 ```
